@@ -31,8 +31,8 @@ class cutter extends \CModule
             $this->MODULE_VERSION_DATE = $arModuleVersion['VERSION_DATE'];
         }
 
-        $this->MODULE_NAME = 'Just test';
-        $this->MODULE_DESCRIPTION = 'Just test';
+        $this->MODULE_NAME = 'Cutter module';
+        $this->MODULE_DESCRIPTION = 'Модуль коротких ссылок';
     }
 
     /**
