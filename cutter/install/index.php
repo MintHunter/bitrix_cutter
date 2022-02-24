@@ -42,7 +42,7 @@ class cutter extends \CModule
     {
         global $DB, $APPLICATION,$DBType;
         $this->errors = false;
-        if(!$DB->Query("SELECT 'x' FROM urlsCutter_table", true))
+        if(!$DB->Query("SELECT 'x' FROM urlsCutterStatistic_table", true))
         {
             $this->errors = $DB->RunSQLBatch($_SERVER["DOCUMENT_ROOT"]."/local/modules/cutter/install/db/{$DBType}/install.sql");
         }
@@ -72,7 +72,7 @@ class cutter extends \CModule
         global $DB, $APPLICATION,$DBType;
         $this->errors = false;
 
-        if($DB->Query("SELECT 'x' FROM urlsCutter_table", true))
+        if($DB->Query("SELECT 'x' FROM urlsCutterStatistic_table", true))
         {
             $this->errors = $DB->RunSQLBatch($_SERVER["DOCUMENT_ROOT"]."/local/modules/cutter/install/db/{$DBType}/uninstall.sql");
         }
